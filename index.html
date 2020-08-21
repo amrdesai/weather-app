@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Materialize CSS - Minified -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize CSS Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- User CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <!-- Navabr -->
+    <nav class="blue accent-3 lighten-2">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Weather App</a>
+            <a href="#modal-1" id="change-location-btn" class="right">Change Location</a>
+        </div>
+    </nav>
+
+    <!-- Body -->
+    <div class="container mt-2">
+        <div class="custom-background center auto white-text">
+            <div id="location">
+                <h1 id="location-city">City</h1>
+                <img id="w-img">
+            </div>
+
+            <div id="temperature">
+                <div class="degree-section auto">
+                    <h2 id="w-degree">21</h2>
+                    <span id="w-sign">C</span>
+                </div>
+                <div id="w-desc">Its cold</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- MODAL -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <form>
+                <!-- City -->
+                <div class="input-field col s12">
+                    <input id="city" type="text" class="validate">
+                    <label class="active" for="city">City</label>
+                </div>
+
+                <!-- Country -->
+                <div class="input-field col s12">
+                    <input id="country" type="text" class="validate">
+                    <label class="active" for="country">Country</label>
+                </div>
+
+                <!-- Button -->
+                <div class="center">
+                    <button id="new-location-submit-btn" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">cloud</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-close waves-effect btn-flat">Close</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <!-- <footer class="page-footer teal lighten-2">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About Me</h5>
+                    <p class="grey-text text-lighten-4">Hi, I'm AMR. I am a self taught web developer.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Linked In</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                © 2020 website.com
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scripts -->
+    <!-- Materialize CSS - Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/storage.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
